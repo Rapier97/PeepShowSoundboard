@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uZm-jH-ya3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Peep Show Soundboard-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PeepShowSoundBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ibx-GQ-dMy">
+                                <rect key="frame" x="0.0" y="100" width="375" height="531"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="B1w-yH-Svd">
+                                    <size key="itemSize" width="118" height="80"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sE8-cT-bfE">
+                                        <rect key="frame" x="0.0" y="0.0" width="118" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="118" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Four Naan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CpL-fG-NIW">
+                                                    <rect key="frame" x="19" y="30" width="79" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="tintColor" red="0.15377378463745117" green="0.25235068798065186" blue="0.18221697211265564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jhR-XF-Vmi">
+                                <rect key="frame" x="0.0" y="639" width="375" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="zI3-KI-Ma6"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                    <segment title="7"/>
+                                    <segment title="8"/>
+                                    <segment title="9"/>
+                                </segments>
+                                <color key="tintColor" red="0.19215860962867737" green="0.31541302800178528" blue="0.22877919673919678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="hBP-L4-qBP">
+                                <rect key="frame" x="0.0" y="64" width="375" height="29"/>
+                                <color key="backgroundColor" red="1" green="0.84388202428817749" blue="0.81072062253952026" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="zzt-R3-RRd"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Mark"/>
+                                    <segment title="Jeremy"/>
+                                    <segment title="Super-Hans"/>
+                                </segments>
+                                <color key="tintColor" red="0.0017184423049911857" green="0.15457364916801453" blue="0.046003766357898712" alpha="0.80821917808219179" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ibx-GQ-dMy" secondAttribute="trailing" id="0GP-lJ-VsN"/>
+                            <constraint firstItem="hBP-L4-qBP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7PM-N4-67p"/>
+                            <constraint firstAttribute="trailing" secondItem="hBP-L4-qBP" secondAttribute="trailing" id="EkW-yB-UMR"/>
+                            <constraint firstItem="jhR-XF-Vmi" firstAttribute="top" secondItem="ibx-GQ-dMy" secondAttribute="bottom" constant="8" id="Xid-dd-xAP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jhR-XF-Vmi" secondAttribute="bottom" id="azS-N9-8dJ"/>
+                            <constraint firstItem="ibx-GQ-dMy" firstAttribute="top" secondItem="hBP-L4-qBP" secondAttribute="bottom" constant="8" id="ghW-sI-gOm"/>
+                            <constraint firstAttribute="trailing" secondItem="jhR-XF-Vmi" secondAttribute="trailing" id="mUk-f5-uLA"/>
+                            <constraint firstItem="hBP-L4-qBP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="njw-A7-2eE"/>
+                            <constraint firstItem="jhR-XF-Vmi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rMU-Ya-p23"/>
+                            <constraint firstItem="ibx-GQ-dMy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rd2-Tk-jp9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Peep Show Soundboard" id="Unu-Ph-jtH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1772" y="150.67466266866569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TcX-Ja-w0s">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uZm-jH-ya3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="JWb-bg-cGK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.1921586096" green="0.31541302799999998" blue="0.22877919669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textShadowColor" red="0.99818187950000004" green="0.40219429140000001" blue="0.075480349360000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sXN-NG-6u7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bLM-4S-VYM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832.79999999999995" y="150.67466266866569"/>
+        </scene>
+    </scenes>
+</document>
